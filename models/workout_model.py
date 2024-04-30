@@ -5,7 +5,8 @@ class workoutModel(db.Model):
     #sets the table name
     __tablename__ = 'workouts'
 
-    muscle_group = db.Column(db.String, primary_key=True)
+    workout_id = db.Column(db.Integer, primary_key=True)
+    muscle_group = db.Column(db.String, nullable=False)
     equipment = db.Column(db.Boolean, nullable=False)
     rep_range = db.Column(db.Integer, nullable=False)
     weight_range = db.Column(db.Integer, nullable=False)
