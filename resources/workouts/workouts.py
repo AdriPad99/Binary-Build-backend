@@ -15,7 +15,7 @@ from . import bpworkout
 @bpworkout.route('/workouts')
 class workoutResourceList(MethodView):
     #requires the user to be logged in
-    @jwt_required()
+    #@jwt_required()
     @bpworkout.response(200, workoutsSchema(many=True))
     def get(self):
         try:
