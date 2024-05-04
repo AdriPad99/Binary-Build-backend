@@ -60,6 +60,31 @@ class workoutResource(MethodView):
             abort(400, message = 'There is no workout with that id.')
 
 
+    #route that gets the information on a specific product based on id
+    # @bpproduct.route('/products/<int:id>')
+    # class prodResource(MethodView):
+    #     def get(self, id):
+    #         #grabs the product at the with the given id
+    #         product = productModel.query.get(id)
+    #         #if that product exists
+    #         if product:
+    #             #return all of its details
+    #             return {"name" : product.product_name,
+    #                     "price" : product.product_price,
+    #                     "description" : product.product_description}, 200
+    #         else:
+    #             #return error if it doesn't
+    #             return {"error" : "No product with that ID in the database."}, 400
+
+    # def get(self,id):
+    #     workout = workoutModel.query.get(id)
+
+    #     if workout:
+    #         return {"Workout ID" : workout.workout_id,
+    #                 "Equipment" : workout.equipment,
+    #                 }
+
+
     #@jwt_required()
     def delete(self, id):
 

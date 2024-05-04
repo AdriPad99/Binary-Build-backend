@@ -13,8 +13,11 @@ migrate = Migrate(app, db)
 
 from models.user_model import userModel
 from models.workout_model import workoutModel
+from models.random_workout_model import randomWorkoutModel
 
 from resources.loginandout import bpusr as login_bp
 app.register_blueprint(login_bp)
 from resources.workouts import bpworkout as workout_bp
 app.register_blueprint(workout_bp)
+from resources.randomWorkouts import bpranworkout as ranWorkout_bp
+app.register_blueprint(ranWorkout_bp)
