@@ -24,7 +24,7 @@ class workoutResourceList(MethodView):
         except:
             abort(400, message='A problem occurred geting info from the db.')
 
-    @jwt_required()
+    #@jwt_required()
     @bpworkout.arguments(workoutsSchema)
     @bpworkout.response(201, workoutsSchema)
     def post(self, data):
@@ -44,7 +44,7 @@ class workoutResourceList(MethodView):
 @bpworkout.route('/workouts/<int:id>')
 class workoutResource(MethodView):
 
-    @jwt_required()
+    #@jwt_required()
     @bpworkout.arguments(workoutsSchema)
     def put(self, data, id):
 
@@ -60,7 +60,7 @@ class workoutResource(MethodView):
             abort(400, message = 'There is no workout with that id.')
 
 
-    @jwt_required()
+    #@jwt_required()
     def delete(self, id):
 
         workout = workoutModel.query.get(id)
