@@ -3,7 +3,7 @@ from app import db
 class randomWorkoutModel(db.Model):
 
     #sets the table name
-    __tablename__ = 'random_workouts'
+    __tablename__ = 'recommended_workouts'
 
     workout_id = db.Column(db.Integer, primary_key=True)
     muscle_group = db.Column(db.String, nullable=False)
