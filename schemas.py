@@ -8,6 +8,7 @@ class workoutsSchema(Schema):
     rep_range = fields.Int(required = True)
     weight_range = fields.Int(required=True)
     workout_variation = fields.Str(required=True)
+    day = fields.Str(required=True)
 
 #Schema for the random workouts
 class randomWorkoutsSchema(Schema):
@@ -17,6 +18,7 @@ class randomWorkoutsSchema(Schema):
     rep_range = fields.Int(required = True)
     weight_range = fields.Int(required=True)
     workout_variation = fields.Str(required=True)
+    day = fields.Str(required=True)
 
 #Schema for the user
 class userSchema(Schema):

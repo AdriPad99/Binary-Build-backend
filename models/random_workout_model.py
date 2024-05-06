@@ -11,6 +11,7 @@ class randomWorkoutModel(db.Model):
     rep_range = db.Column(db.Integer, nullable=False)
     weight_range = db.Column(db.Integer, nullable=False)
     workout_variation = db.Column(db.String, nullable=False)
+    day = db.Column(db.String, nullable=False)
 
     #adds and commits local information
     def add_random_workout(self):
