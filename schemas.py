@@ -28,3 +28,7 @@ class userSchema(Schema):
     password = fields.Str(required=True)
     first_name = fields.Str(required=True)
     last_name = fields.Str(required=True)
+    age = fields.Int(required = False)
+    gender = fields.Str(required = False)
+    height = fields.Str(required=False)
+    weight = fields.Str(required=False)

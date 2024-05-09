@@ -13,6 +13,10 @@ class userModel(db.Model):
     password = db.Column(db.String, nullable = False, unique = False)
     first_name = db.Column(db.String(20), nullable = False, unique = False)
     last_name = db.Column(db.String(20), nullable = False, unique = False)
+    age = db.Column(db.Integer, nullable = True, unique = False)
+    gender = db.Column(db.Integer, nullable = True, unique = False)
+    height = db.Column(db.Integer, nullable = True, unique = False)
+    weight = db.Column(db.Integer, nullable = True, unique = False)
 
     #adds and commits local information
     def add_usr(self):

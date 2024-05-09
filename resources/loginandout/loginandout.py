@@ -103,6 +103,26 @@ class signupResource(MethodView):
             #returns error if it happens
             abort(400, message = "There was a problem updating user information.")
         
+    #method for getting a single user by id
+    def get(self, id):
+
+        login = userModel.query.get(id)
+
+        if login:
+
+            return {"username" : login.username,
+                    "email" : login.email,
+                    "first_name" : login.first_name,
+                    "last_name" : login.last_name,
+                    "age" : login.age,
+                    "gender" : login.gender,
+                    "height" : login.height,
+                    "weight" : login.weight,
+                    "user_id" : login.user_id
+                    #enter more key value pairs of the same layout here if needed
+                    }, 200
+        else:
+            return {"error" : "No user with that ID in the database"}
     
     def delete(self, id):
 
@@ -117,3 +137,14 @@ class signupResource(MethodView):
         else:
             #abort if an error shows up
             abort(400, message = 'User with that ID not in the database.')
+
+
+@bpusr.route('/age/<int:id>')
+class signupResource(MethodView):
+    #THIS IS ONLY USED FOR IF YOU WANT TO GRAB DATA FROM A PUT OR PATCH REQUEST
+    #@bpusr.arguments(userSchema)
+    #method for getting a single user by id
+    def get(self, id):
+
+        login = userModel.query.get(id)
+
