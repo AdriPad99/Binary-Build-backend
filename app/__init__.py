@@ -7,7 +7,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-CORS(app, resources={r"/*": {"origins": "https://binary-build.netlify.app/"}})
+# CORS(app, resources={r"/*": {"origins": "https://binary-build.netlify.app/"}})
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB_PROJ_URL')
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
