@@ -17,6 +17,17 @@ class userModel(db.Model):
     gender = db.Column(db.Integer, nullable = True, unique = False)
     height = db.Column(db.Integer, nullable = True, unique = False)
     weight = db.Column(db.Integer, nullable = True, unique = False)
+    target_weight = db.Column(db.Integer, nullable = True, unique = False)
+    target_body_fat_percentage = db.Column(db.Integer, nullable = True, unique = False)
+    fitness_level = db.Column(db.String(15), nullable = True, unique = False)
+    daily_activity_level = db.Column(db.String(15), nullable = True, unique = False)
+    pref_workout_types = db.Column(db.String(20), nullable = True, unique = False)
+    pref_workout_duration = db.Column(db.Integer, nullable = True, unique = False)
+    available_equipment = db.Column(db.String(200), nullable = True, unique = False)
+    chest = db.Column(db.Integer, nullable = True, unique = False)
+    waist = db.Column(db.Integer, nullable = True, unique = False)
+    hips = db.Column(db.Integer, nullable = True, unique = False)
+    amnt_workouts_completed = db.Column(db.Integer, nullable = True, unique = False)
 
     #adds and commits local information
     def add_usr(self):
