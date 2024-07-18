@@ -23,11 +23,11 @@ class randomWorkoutsSchema(Schema):
 #Schema for the user
 class userSchema(Schema):
     user_id = fields.Int(dump_only=True)
-    username = fields.Str(required=True)
-    email = fields.Str(required=True)
-    password = fields.Str(required=True)
-    first_name = fields.Str(required=True)
-    last_name = fields.Str(required=True)
+    username = fields.Str(required=False)
+    email = fields.Str(required=False)
+    password = fields.Str(required=False)
+    first_name = fields.Str(required=False)
+    last_name = fields.Str(required=False)
     age = fields.Int(required = False)
     gender = fields.Str(required = False)
     height = fields.Str(required=False)
