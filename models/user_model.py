@@ -14,7 +14,7 @@ class userModel(db.Model):
     first_name = db.Column(db.String(20), nullable = False, unique = False)
     last_name = db.Column(db.String(20), nullable = False, unique = False)
     age = db.Column(db.Integer, nullable = True, unique = False)
-    gender = db.Column(db.Integer, nullable = True, unique = False)
+    gender = db.Column(db.String(20), nullable = True, unique = False)
     height = db.Column(db.Integer, nullable = True, unique = False)
     weight = db.Column(db.Integer, nullable = True, unique = False)
     target_weight = db.Column(db.Integer, nullable = True, unique = False)

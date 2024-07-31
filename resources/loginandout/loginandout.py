@@ -8,7 +8,7 @@ from flask_smorest import abort
 
 from app import app
 
-from models.user_model import userModel
+from models.user_model import userModel 
 
 from schemas import userSchema
 
