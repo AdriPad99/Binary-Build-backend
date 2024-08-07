@@ -118,7 +118,18 @@ class signupResource(MethodView):
                     "gender" : login.gender,
                     "height" : login.height,
                     "weight" : login.weight,
-                    "user_id" : login.user_id
+                    "user_id" : login.user_id,
+                    "target_weight" : login.target_weight,
+                    "target_body_fat_percentage" : login.target_body_fat_percentage,
+                    "fitness_level" : login.fitness_level,
+                    "daily_activity_level" : login.daily_activity_level,
+                    "pref_workout_types" : login.pref_workout_types,
+                    "pref_workout_duration" : login.pref_workout_duration,
+                    "available_equipment" : login.available_equipment,
+                    "chest" : login.chest,
+                    "waist" : login.waist,
+                    "hips" : login.hips,
+                    "amnt_workouts_completed" : login.amnt_workouts_completed
                     #enter more key value pairs of the same layout here if needed
                     }, 200
         else:
