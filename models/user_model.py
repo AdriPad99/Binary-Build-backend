@@ -8,11 +8,12 @@ class userModel(db.Model):
 
     #sets outline for table
     user_id = db.Column(db.Integer, primary_key = True)
-    username = db.Column(db.String(25), nullable = False, unique = True)
-    email = db.Column(db.String(50), nullable = False, unique = True)
+    username = db.Column(db.String(25), nullable = False, unique = True) #unique
+    email = db.Column(db.String(50), nullable = False, unique = True) #unique
     password = db.Column(db.String, nullable = False, unique = False)
     first_name = db.Column(db.String(20), nullable = False, unique = False)
     last_name = db.Column(db.String(20), nullable = False, unique = False)
+    summary = db.Column(db.String(400), nullable = False, unique = False)
     age = db.Column(db.Integer, nullable = True, unique = False)
     gender = db.Column(db.String(20), nullable = True, unique = False)
     height = db.Column(db.String(50), nullable = True, unique = False)

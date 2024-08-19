@@ -114,6 +114,7 @@ class signupResource(MethodView):
                     "email" : login.email,
                     "first_name" : login.first_name,
                     "last_name" : login.last_name,
+                    "summary" : login.summary,
                     "age" : login.age,
                     "gender" : login.gender,
                     "height" : login.height,
