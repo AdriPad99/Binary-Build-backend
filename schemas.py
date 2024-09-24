@@ -43,7 +43,7 @@ class userSchema(Schema):
     chest = fields.Int(required=False)
     waist = fields.Int(required=False)
     hips = fields.Int(required=False)
-    # amnt_workouts_completed = fields.Int(required=False)
+    amnt_workouts_completed = fields.Int(required=False)
     # calories = fields.Int(required=False)
     # weight_loss = fields.Int(required=False)
     # max_weight_lifted = fields.Int(required=False)
