@@ -29,14 +29,13 @@ class userModel(db.Model):
     waist = db.Column(db.Integer, nullable = True, unique = False)
     hips = db.Column(db.Integer, nullable = True, unique = False)
     amnt_workouts_completed = db.Column(db.Integer, nullable = True, unique = False)
-    # calories = db.Column(db.Integer, nullable = True, unique = False)
-    # weight_loss = db.Column(db.Integer, nullable = True, unique = False)
-    # max_weight_lifted = db.Column(db.Integer, nullable = True, unique = False)
-    # fastest_mile = db.Column(db.Integer, nullable = True, unique = False)
-    # total_workout_time = db.Column(db.Integer, nullable = True, unique = False)
-    # total_calories_burned = db.Column(db.Integer, nullable = True, unique = False)
-    # total_workouts_completed = db.Column(db.Integer, nullable = True, unique = False)
-    # total_workout_time = db.Column(db.Integer, nullable = True, unique = False)
+    calories = db.Column(db.Integer, nullable = True, unique = False)
+    weight_loss = db.Column(db.Integer, nullable = True, unique = False)
+    max_weight_lifted = db.Column(db.Integer, nullable = True, unique = False)
+    fastest_mile = db.Column(db.Integer, nullable = True, unique = False)
+    total_workout_time = db.Column(db.Integer, nullable = True, unique = False)
+    total_calories_burned = db.Column(db.Integer, nullable = True, unique = False)
+    total_workouts_completed = db.Column(db.Integer, nullable = True, unique = False)
 
     #adds and commits local information
     def add_usr(self):
