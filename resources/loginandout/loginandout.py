@@ -130,7 +130,9 @@ class signupResource(MethodView):
                     "chest" : login.chest,
                     "waist" : login.waist,
                     "hips" : login.hips,
-                    "amnt_workouts_completed" : login.amnt_workouts_completed
+                    "amnt_workouts_completed" : login.amnt_workouts_completed,
+                    "calories" : login.calories,
+                    "total_workout_time": login.total_workout_time,
                     #enter more key value pairs of the same layout here if needed
                     }, 200
         else:
